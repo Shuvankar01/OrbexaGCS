@@ -66,6 +66,7 @@ public:
     void init() final;
     void cleanup() final;
     QGCOptions*             options                         (void) final;
+    QString                 appName                         (void) const;
     QString                 brandImageIndoor                (void) const final;
     QString                 brandImageOutdoor               (void) const final;
     bool                    overrideSettingsGroupVisibility (const QString &name) final;

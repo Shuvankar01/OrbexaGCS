@@ -128,6 +128,12 @@ QGCOptions* CustomPlugin::options()
     return _options;
 }
 
+// Custom App Name Override
+QString CustomPlugin::appName(void) const
+{
+    return QStringLiteral("OrbexaGCS"); // Change this to your preferred App Name
+}
+
 QString CustomPlugin::brandImageIndoor(void) const
 {
     return QStringLiteral("/custom/img/dronecode-white.svg");
