@@ -1,56 +1,54 @@
+<p align="center">
+  <img src="custom/res/QGCLogoFull.svg" alt="OrbexaGCS Logo" width="400">
+</p>
+
+<h1 align="center">OrbexaGCS</h1>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Dronecode/UX-Design/35d8148a8a0559cd4bcf50bfa2c94614983cce91/QGC/Branding/Deliverables/QGC_RGB_Logo_Horizontal_Positive_PREFERRED/QGC_RGB_Logo_Horizontal_Positive_PREFERRED.svg" alt="QGroundControl Logo" width="500">
+  <b>A High-Performance, Custom Ground Control Station for Autonomous Systems</b>
 </p>
 
 <p align="center">
-  <a href="https://github.com/mavlink/QGroundControl/releases">
-    <img src="https://img.shields.io/github/release/mavlink/QGroundControl.svg" alt="Latest Release">
+  <a href="https://github.com/mavlink/qgroundcontrol/releases">
+    <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-blue" alt="Supported Platforms">
+  </a>
+  <a href="https://github.com/mavlink/qgroundcontrol/blob/master/.github/COPYING.md">
+    <img src="https://img.shields.io/badge/License-Apache%202.0%20%2F%20GPL%20v3-green" alt="License">
   </a>
 </p>
 
-*QGroundControl* (QGC) is a highly intuitive and powerful Ground Control Station (GCS) designed for UAVs. Whether you're a first-time pilot or an experienced professional, QGC provides a seamless user experience for flight control and mission planning, making it the go-to solution for any *MAVLink-enabled drone*.
+---
+
+*OrbexaGCS* is a customized, streamlined Ground Control Station engineered specifically for precision flight operations, mission planning, and real-time telemetry management. Built on top of the robust QGroundControl engine, OrbexaGCS offers an enhanced, bespoke user interface tailored for modern UAV operations.
 
 ---
 
-### 🌟 *Why Choose QGroundControl?*
+### 🌟 Key Enhancements in OrbexaGCS
 
-- *🚀 Ease of Use*: A beginner-friendly interface designed for smooth operation without sacrificing advanced features for pros.
-- *✈️ Comprehensive Flight Control*: Full flight control and mission management for *PX4* and *ArduPilot* powered UAVs.
-- *🛠️ Mission Planning*: Easily plan complex missions with a simple drag-and-drop interface.
-
-🔍 For a deeper dive into using QGC, check out the [User Manual](https://docs.qgroundcontrol.com/en/) – although, thanks to QGC's intuitive UI, you may not even need it!
-
+* 🎨 **Customized User Interface**: Re-branded header, navigation bars, and custom color palette tuned for high readability in outdoor and indoor field conditions.
+* 🎯 **Optimized Workflow**: Streamlined single-vehicle focus with simplified dashboard metrics to reduce pilot cognitive load.
+* 🛰️ **Comprehensive Mission Planning**: Drag-and-drop waypoint generation, survey grid planning, and real-time waypoint synchronization over MAVLink.
+* ⚡ **PX4 & ArduPilot Integration**: Full native support for advanced parameter configuration, sensor calibration, and vehicle setup across PX4 Pro and ArduPilot systems.
 
 ---
 
-### 🚁 *Key Features*
+### 🚁 Core Features
 
-- 🕹️ *Full Flight Control*: Supports all *MAVLink drones*.
-- ⚙️ *Vehicle Setup*: Tailored configuration for *PX4* and *ArduPilot* platforms.
-- 🔧 *Fully Open Source*: Customize and extend the software to suit your needs.
-
-🎯 Check out the latest updates in our [New Features and Release Notes](https://github.com/mavlink/qgroundcontrol/blob/master/ChangeLog.md).
+* **Full Flight Control & Telemetry:** Real-time HUD, PFD instruments, live map tile caching, and dynamic flight mode status.
+* **Custom Toolbar Actions:** Dedicated action lists customized for custom vehicle routines and mission commands.
+* **Open Source Base:** Maintained and customized through strict C++ plugin overrides (`CustomPlugin`) and isolated CMake modular builds.
 
 ---
 
-### 💻 *Get Involved!*
+### 🛠️ Developer & Build Guide
 
-QGroundControl is *open-source*, meaning you have the power to shape it! Whether you're fixing bugs, adding features, or customizing for your specific needs, QGC welcomes contributions from the community.
+#### System Requirements
+* **Qt Framework:** Qt 6.8.3 (MSVC 2022 64-bit)
+* **Build System:** CMake 3.22+ & Ninja
+* **Compiler:** MSVC 2022 (Windows) / GCC / Clang
 
-🛠️ Start building today with our [Developer Guide](https://dev.qgroundcontrol.com/en/) and [build instructions](https://dev.qgroundcontrol.com/en/getting_started/).
-
----
-
-### 🔗 *Useful Links*
-
-- 🌐 [Official Website](http://qgroundcontrol.com)
-- 📘 [User Manual](https://docs.qgroundcontrol.com/en/)
-- 🛠️ [Developer Guide](https://dev.qgroundcontrol.com/en/)
-- 💬 [Discussion & Support](https://docs.qgroundcontrol.com/en/Support/Support.html)
-- 🤝 [Contributing](https://dev.qgroundcontrol.com/en/contribute/)
-- 📜 [License Information](https://github.com/mavlink/qgroundcontrol/blob/master/.github/COPYING.md)
-
----
-
-With QGroundControl, you're in full command of your UAV, ready to take your missions to the next level.
+#### Build Steps
+1. Clone the repository with submodules:
+   ```bash
+   git clone --recursive [https://github.com/your-org/groundcontroller.git](https://github.com/your-org/groundcontroller.git)
+   cd groundcontroller
