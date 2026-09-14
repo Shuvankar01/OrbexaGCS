@@ -134,6 +134,12 @@ QString CustomPlugin::appName(void) const
     return QStringLiteral("OrbexaGCS"); // Change this to your preferred App Name
 }
 
+// Custom Top-Left Header Logo Override
+QString CustomPlugin::logo(void) const
+{
+    return QStringLiteral(":/custom/res/QGCLogoFull.svg");
+}
+
 QString CustomPlugin::brandImageIndoor(void) const
 {
     return QStringLiteral("/custom/img/dronecode-white.svg");
